@@ -15,7 +15,7 @@ function App() {
       {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p className='App-pos'>
-          Edit <code>src/App.js</code> and save to reload.  auto refresh result name you can give me a good  studned
+          Edit <code>src/App.js</code> and save to reload. 
         </p>
         <a
           className="App-link"
