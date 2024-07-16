@@ -77,13 +77,13 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App></App>
+  // <App></App>
   
-  // <React.StrictMode>
-  //   {/* <App /> */}
-  //   <RouterProvider router={router} />
+  <React.StrictMode>
+    {/* <App /> */}
+    <RouterProvider router={router} />
 
-  // </React.StrictMode>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
