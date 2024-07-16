@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>default</title>
+    <style>
+      .container {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+
+        /*纵向轴的对齐方式，如果flex-direction 为row的情况下*/
+        align-items: center;
+
+        /*横向的distributed items, 分别为 常用的 center space between| space around*/
+        justify-content: center;
+
+        /* 防止超过当前的flex  可以自动换行显示这个文本 */
+        flex-wrap: wrap;
+        /* height: 100px; */
+      }
+
+      .container1 {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .item1 {
+        /* flex-grow flex-shrink flex-basis */
+        flex: 1 1 100px;
+      }
+      .header1 {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: gainsboro;
+        /* flex-grow: 1; */
+      }
+
+      #header1 :hover {
+        background-color: blue;
+        color: yellowgreen;
+      }
+      .header2 {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: green;
+        /* flex-grow: 1; */
+      }
+      .header3 {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: red;
+        /* flex-grow: 1; */
+      }
+      .header4 {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: purple;
+        /* width: 200px; */
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header1" onclick="alert('header1')">HEADER1</header>
+      <header class="header2">HEADER2</header>
+      <header class="header3">HEADER3</header>
+      <header class="header4">HEADER4</header>
+    </div>
+  </body>
+</html>

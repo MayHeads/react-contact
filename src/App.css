@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -27,6 +23,75 @@
 .App-link {
   color: #61dafb;
 }
+.App-button {
+  border: white 3px solid;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  background-color: aquamarine;
+  color: green;
+  font-size: 14;
+  /* width: auto; */
+  /* height: 100px; */
+}
+.App-box {
+  /* width: auto;
+  height: 100px; */
+  border: 1px solid black;
+  /* padding: 10px; */
+  /* font-size: 1cm; */
+  /* background-color: green; */
+  border-radius: 10px;
+  align-items: center;
+  /* justify-content: center */
+}
+
+
+
+
+
+
+
+.App-pos {
+  color: aqua;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1cm;
+  background-color: green;
+  border-radius: 10px;
+  width: auto;
+  height: 100px;
+  
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link:hover {
+  color: blue;
+}
+
+.App-link:active {
+  color: red;
+}
+
+.App-pos:hover {
+  color: blue;
+}
+
+.App-pos:active {
+  color: red;
+}
+
+.App-pos:hover {
+  color: blue;
+}
+  
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +100,6 @@
   to {
     transform: rotate(360deg);
   }
+
+
 }

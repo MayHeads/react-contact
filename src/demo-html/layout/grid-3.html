@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>default</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+      }
+
+        .container > div {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      #subgrid > div {
+        background-color: aqua;
+      }
+
+      #subgrid {
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+        display: grid;
+        gap: inherit;
+        grid-template-columns: subgrid;
+        grid-template-rows: 2fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div id="subgrid">
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+        <div>Eight</div>
+      </div>
+      <div>Nine</div>
+      <div>Ten</div>
+    </div>
+  </body>
+</html>
