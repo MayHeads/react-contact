@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactDOM from "react-dom/client";
 import {
-  createBrowserRouter,
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
